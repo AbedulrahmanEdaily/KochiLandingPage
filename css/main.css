@@ -105,6 +105,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    max-height: 58px;
 }
 
 /* End Footer */

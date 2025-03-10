@@ -7,6 +7,12 @@
     padding: 120px 0;
 }
 
+@media (max-width:575px) {
+    .contact {
+        padding: 80px 0;
+    }
+}
+
 /*End Contact */
 /* Start form */
 .content {
@@ -98,7 +104,7 @@
 
 @media (max-width:575px) {
     .content {
-        height: calc(100vh - 412px);
+        height: calc(100vh - 314px);
     }
 
     .content .container {
