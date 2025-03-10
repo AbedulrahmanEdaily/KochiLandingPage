@@ -1,0 +1,147 @@
+/* Start Hero */
+.hero {
+    background-image: url(../images/hero-background.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 68px);
+    color: #fff;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    gap: 16px;
+}
+
+.hero .container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.hero .container .text h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero .container .text p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hero .container a {
+    padding: 20px 80px;
+    background-color: #f7a542;
+    color: #000;
+    border-color: #bd8f56;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+@media (max-width:575px) {
+    .hero .container .text h1 {
+        font-size: 36px;
+    }
+
+    .hero .container {
+        align-items: center;
+    }
+
+    .hero .container a {
+        margin-right: 0;
+    }
+}
+
+/* End Hero */
+/* Start Doing */
+.doing {
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+.doing h2 {
+    margin-bottom: 20px;
+}
+
+.doing .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.doing .card {
+    gap: 16px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #234477;
+    overflow: hidden;
+}
+
+.doing .card h3 {
+    background-color: #234477;
+    padding: 40px 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.doing .card p {
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* End Doing */
+/* Start About */
+.about {
+    padding-bottom: 120px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about .top {
+    display: flex;
+    gap: 20px;
+}
+
+.about .top img {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.about .top .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about .top .right p {
+    line-height: 1.6;
+}
+
+@media (max-width:991px) {
+    .about .top {
+        flex-direction: column;
+    }
+
+    .about .top img {
+        width: 100%;
+    }
+}
+
+/* End About */

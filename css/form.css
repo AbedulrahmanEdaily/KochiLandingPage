@@ -1,0 +1,110 @@
+/*Start Contact */
+.contact {
+    background-image: url(../images/hero-background.png);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+}
+
+/*End Contact */
+/* Start form */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 394px);
+}
+
+.content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.content .container .details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.content .container .form {
+    flex: 1;
+}
+
+.content .container .form h2 {
+    margin-bottom: 16px;
+}
+
+.content .container .form form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content .container .form form .top {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.content .container .form form .top .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.content .container .form form .top .labels {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.content .container .form form .top .inputs input,
+.content .container .form form .top .inputs textarea {
+    padding: 8px;
+    border: 2px solid #ff7777;
+    border-radius: 4px;
+}
+
+.content .container .form form .top .inputs textarea {
+    resize: none;
+}
+
+.content .container .form form .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.content .container .form form .buttons button {
+    padding: 8px 16px;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.content .container .form form .buttons button.green {
+    background-color: #78bb98;
+}
+
+.content .container .form form .buttons button.red {
+    background-color: #ff7777;
+}
+
+@media (max-width:575px) {
+    .content {
+        height: calc(100vh - 412px);
+    }
+
+    .content .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* End form */
