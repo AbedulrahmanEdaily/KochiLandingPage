@@ -105,7 +105,13 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    max-height: 58px;
+    height: 58px;
+}
+
+@media (max-width:575px) {
+    footer {
+        font-size: 14px;
+    }
 }
 
 /* End Footer */
