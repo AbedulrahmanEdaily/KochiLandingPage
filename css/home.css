@@ -116,15 +116,33 @@
 
 .about .top {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.about .top img {
-    width: 40%;
+.about .top figure {
+    flex-basis: 40%;
+}
+
+.about .top figure img {
+    width: 100%;
     border-radius: 15px;
 }
 
+.about .top figure figcaption {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.about .top figure:hover figcaption {
+    opacity: 1;
+}
+
 .about .top .right {
+    flex-basis: 55%;
     display: flex;
     flex-direction: column;
     gap: 20px;
